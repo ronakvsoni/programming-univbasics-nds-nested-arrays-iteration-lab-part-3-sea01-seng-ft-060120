@@ -7,18 +7,17 @@ mixed_data = [
 def join_nested_strings(src)
   # src will be an Array of Arrays of Strings and Integers
   # Combine all Strings present in the AoA into a single value and return it
-end
-
-def find_even_values(src)
-  row_index = 0
+    row_index = 0
   while row_index < src.count do
     element_index = 0
     while element_index < src[row_index].count do
-      if src[row_index][element_index].to_s.join?
-        p src[row_index][element_index]
+      if src[row_index][element_index].to_s?
+        p src[row_index][element_index].join
       end
-      element_index += 1
+    element_index += 1
     end
     row_index += 1
   end
 end
+
+
