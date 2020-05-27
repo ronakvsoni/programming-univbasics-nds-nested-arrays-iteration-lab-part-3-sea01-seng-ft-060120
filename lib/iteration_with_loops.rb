@@ -19,6 +19,7 @@ def join_nested_strings(src)
     end
     row_index += 1
   end
+  string
 end
  p join_nested_strings(mixed_data)
 
